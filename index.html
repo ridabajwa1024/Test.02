@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+    }
+
+    header {
+        background-color: #043873;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header select {
+        list-style: none;
+    }
+
+    header img {
+        margin-left: 155px;
+    }
+
+    header a {
+        text-decoration: none;
+        color: white;
+        margin-left: 40px;
+        font-size: 15px;
+    }
+
+    /* #tags{
+        margin-right: 100px;
+        background-color: yellow;
+    } */
+    button {
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        font-size: 16px;
+    }
+
+    #header-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-right: 40px;
+    }
+
+    .myselect {
+        background: none;
+        border: none;
+        color: inherit;
+        font: inherit;
+        padding: 0;
+        margin: 0;
+        margin-left: 30px;
+        outline: none;
+        cursor: pointer;
+        /* appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none; */
+    }
+
+    /* .myselect:hover{
+
+   } */
+    /* .myselect option{
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 400px;
+   } */
+    #section-01 {
+        background-color: #043873;
+        background-image: url(/test/Element.png);
+        /* background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; */
+        /* background-attachment: fixed; */
+        background-repeat: no-repeat;
+        height: 720px;
+        display: flex;
+        justify-content: center;
+        gap: 200px;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
+
+    #sub-section1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        width: 500px;
+        gap: 10px;
+        /* background-color: yellow; */
+
+    }
+
+    #sub-section1 button {
+        padding: 20px;
+        width: 250px;
+        color: white;
+        background-color: #4F9CF9;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    #sub2-section1 img {
+        width: 500px;
+        height: 700px;
+        /* transform: rotate(-20deg); */
+      
+    }
+    
+    #section-2 {
+        height: 1000px;
+        background-color: rgba(255, 255, 255, 0.8);
+        /* light overlay */
+        background-blend-mode: overlay;
+        display: block;
+        padding: 100px 120px 100px 120px;
+        background-image: url(/test/Group.png);
+        background-size: 20% auto;
+        background-position: left 200px;
+        background-repeat: no-repeat;
+    }
+
+    #sub1-section2 {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        margin: 0;
+        text-align: start;
+        /* background-color: brown; */
+
+    }
+
+    #sub1-sub1-section2 {
+        /* background-color:white ; */
+        width: 670px;
+        height: 300px;
+        /* background-color: aquamarine; */
+    }
+
+    #sub1-sub1-section2 button {
+        padding: 20px;
+        width: 250px;
+        color: white;
+        background-color: #4F9CF9;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .highlighted {
+        background-image: url(/test/Vector.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+    }
+
+    #sub1-sub2-section2 {
+        width: 500px;
+        height: 400px;
+        background-color: #C4DEFD;
+    }
+
+    #sub2-section2 {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        margin-top: 150px;
+        /* background-color: coral; */
+    }
+
+    #sub2-section2 img {
+        width: 500px;
+        height: 450px;
+        /* background-color: rebeccapurple; */
+        margin-left: 140px;
+    }
+
+    #sub2-sub1-section2 {
+        /* background-color: yellow; */
+        text-align: left;
+        width: 600px;
+    }
+
+    #sub2-sub1-section2 button {
+        padding: 20px;
+        width: 250px;
+        color: white;
+        background-color: #4F9CF9;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+    }
+
+    #section-03 {
+        height: 500px;
+        background-color: #043873;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sub1-section3 {
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: brown; */
+    }
+
+    #sub1-sub1-section3 {
+        width: 500px;
+        height: 300px;
+        /* background-color: yellow; */
+    }
+
+    #sub1-sub1-section3 button {
+        padding: 20px;
+        width: 150px;
+        color: white;
+        background-color: #4F9CF9;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    #sub2-sub1-section3 {
+        background-color: #C4DEFD;
+        width: 500px;
+        height: 300px;
+    }
+
+    #section-04 {
+        height: 1650px;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+    }
+
+    #sub1-section4 {
+        width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 400px;
+        margin-top: 100px;
+    }
+
+    #sub1-sub1-section4 {
+        width: 500px;
+        height: 400px;
+    }
+
+    #sub1-sub1-section4 button {
+        padding: 20px;
+        width: 150px;
+        color: white;
+        background-color: #4F9CF9;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    #sub2-sub1-section4 {
+        background-color: #C4DEFD;
+        width: 500px;
+        height: 400px;
+    }
+
+    #sub2-section4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #sub1-sub2-section4 {
+        text-align: center;
+        width: 1000px;
+      
+     
+    }
+
+    #sub3-section4 {
+        width: 1500px;
+        height: 800px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    #sub1-sub3-section3 {
+        height: 600px;
+        width: 400px;
+        padding: 10px 30px 10px 40px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #FFE492;
+        border-radius: 10px;
+
+    }
+
+    #sub1-sub3-section3 button {
+        width: 200px;
+        background-color: white;
+        border: 1px solid #FFE492;
+        padding: 15px;
+    }
+
+    #sub2-sub3-section3 {
+        height: 700px;
+        width: 400px;
+        padding: 60px 30px 5px 40px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: #043873;
+        color: white;
+        box-shadow: 5px 5px 10px 1px rgb(117, 116, 116);
+    }
+
+    #sub2-sub3-section3 i {
+        /* background-color: yellow; */
+        color: #FFE492;
+        margin-right: 20px;
+        align-self: center;
+        font-size: 20px;
+
+
+    }
+
+    #sub2-sub3-section3 button {
+        width: 200px;
+        background-color: #4F9CF9;
+        color: white;
+        padding: 20px;
+        margin-top: 30px;
+    }
+
+    .icon-para {
+        display: flex;
+        /* background-color: yellow; */
+
+    }
+
+    .icon-para i {
+        /* background-color: yellow; */
+        margin-right: 20px;
+        align-self: center;
+        font-size: 20px;
+        color: rgb(190, 188, 188);
+
+    }
+
+    /* p i{
+        font-weight: bold;
+       margin: 5px;
+    } */
+    #sub3-sub3-section3 {
+        height: 600px;
+        width: 400px;
+        padding: 10px 30px 10px 40px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #FFE492;
+        border-radius: 10px;
+
+    }
+
+    #sub3-sub3-section3 button {
+        width: 200px;
+        background-color: white;
+        border: 1px solid #FFE492;
+        padding: 15px;
+    }
+</style>
+
+<body>
+    <header>
+        <img src="/test/Logo.png" alt="">
+        <div id="tags">
+            <select name="" class="myselect">
+                <option value=""><a href="">Product </a></option>
+            </select>
+            <select name="" class="myselect">
+                <option value=""> <a href="">solution</a></option>
+            </select>
+            <select name="" class="myselect">
+                <option value=""> <a href="">Resources</a></option>
+            </select>
+            <select name="" class="myselect">
+                <option value=""> <a href="">Pricing</a></option>
+            </select>
+        </div>
+        <div id="header-button"> <button style="background-color: #FFE492;color: #043873 ;width: 126px;">Login</button>
+            <button style="background-color: #4F9CF9;color: white;width: 227ox;">Try Whitespace free</button>
+        </div>
+    </header>
+    <section id="section-01">
+        <div id="sub-section1">
+            <p style="font-size: 55px;font-weight: 700;
+width: 800px; color: white;padding: 0;margin-bottom: 10px;">Get more Done with Whitespace</p>
+            <p style="width: 656px;font-size: 18px;line-height: 30px;color: white;margin-bottom: 40px;">Project
+                management software that enables your teams to collaborate, plan, analyze and manage everyday tasks</p>
+            <button>Try whitespace free
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+        <div id="sub2-section1">
+            <img src="/test/20250624_1610_Floating_3D_Spheres_simple_compose_01jygt2d57fae9race5034qwp9-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+    <section id="section-2">
+        <div id="sub1-section2">
+            <div id="sub1-sub1-section2">
+                <p style="font-size: 55px;font-weight: 700;
+                width: 800px; color:black;padding: 0;margin-bottom: 10px;">Project <br><span
+                        class="highlighted">Management
+                    </span>
+                <p style="line-height: 20px;color:black;margin-bottom: 40px;">Images, videos, PDFs and audio files are
+                    supported. Create math expressions and diagrams directly
+                    from the app. Take photos with the mobile app and save them to a note.</p>
+                </p>
+                <button>Get Started <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div id="sub1-sub2-section2"></div>
+        </div>
+        <div id="sub2-section2">
+            <img src="/test/image.png" alt="">
+            <div id="sub2-sub1-section2">
+                <p style="font-size: 55px;font-weight: 700;
+                width: 600px; color:black;padding: 0;margin-bottom: 10px;">Work <span class="highlighted">Together
+                    </span>
+                <p style="line-height: 20px;color:black;margin-bottom: 40px;">With whitepace, share your notes with your
+                    colleagues and collaborate on them.
+                    You can also publish a note to the internet and share the URL with others.
+                </p>
+                </p>
+                <button>Try it Now<i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+    </section>
+    <section id="section-03">
+        <div id="sub1-section3">
+            <div id="sub1-sub1-section3">
+                <p style="font-size: 55px;font-weight: 700;
+                width: 600px; color:rgb(255, 255, 255);padding: 0;margin-bottom: 10px;">Use as<span
+                        class="highlighted"> Extension
+                    </span>
+                <p style="line-height: 20px;color:rgb(255, 255, 255);margin-bottom: 40px;">Use the web clipper
+                    extension, available
+                    on Chrome and Firefox, to save web pages or take screenshots as notes.
+                </p>
+                <button>Let's Go<i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+            <div id="sub2-sub1-section3"></div>
+        </div>
+    </section>
+    <section id="section-04">
+        <div id="sub1-section4">
+
+            <div id="sub2-sub1-section4"></div>
+            <div id="sub1-sub1-section4">
+                <p style="font-size: 55px;font-weight: 700;
+                width: 600px; color:rgb(0, 0, 0);padding: 0;margin-bottom: 10px;">Customise it to <span
+                        class="highlighted">your need
+                    </span>
+                <p style="line-height: 20px;color:rgb(0, 0, 0);margin-bottom: 40px;">Customise the app with
+                    plugins,custom themes and multiple text editors(Rich Text or Markdown).Or create your own scripts
+                    and plugins using the Extension API.
+                </p>
+                <button>Let's Go<i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+        <div id="sub2-section4">
+            <div id="sub1-sub2-section4">
+                <p style="font-size: 55px;font-weight: 700;
+               color:rgb(0, 0, 0);padding: 0;margin-bottom: 10px;">Choose<span class="highlighted"> Your
+                        Plan
+                    </span>
+                <p style="line-height: 20px;color:rgb(0, 0, 0);margin-bottom: 40px;">Whether you want to get organized,
+                    keep your personal life on track, or boost workplace productivity, Evernote has the right plan for
+                    you.
+                </p>
+            </div>
+            <div id="sub3-section4">
+                <div id="sub1-sub3-section3">
+                    <p style="font-size: 15px;font-weight:300;color: grey;">Free <br><span
+                            style="font-size: 50px;color: black;font-weight: bold;">$0</span></p>
+
+                    <p style="font-weight: 400;">Capture ideas and find them quickly</p>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Sync unlimited devices</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>10 GB monthly uploads</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>200 MB max. note size
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Customize Home dashboard and access extra widgets</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Connect primary Google Calendar account
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Add due dates, reminders, and notifications to your tasks
+                        </p>
+                    </div>
+                    <button>Get Started</button>
+                </div>
+                <div id="sub2-sub3-section3">
+                    <p style="font-size: 15px;font-weight:300;color: rgb(255, 255, 255);">Personal<br><span
+                            style="font-size: 50px;color:#FFE492;font-weight: bold;">$11.99</span></p>
+
+                    <p style="font-weight: 400;"></p>Keep home and family on track</p>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Sync unlimited devices</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>10 GB monthly uploads</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>200 MB max. note size
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Customize Home dashboard and access extra widgets</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Connect primary Google Calendar account
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Add due dates, reminders, and notifications to your tasks
+                        </p>
+                    </div>
+                    <button>Get Started</button>
+                </div>
+
+
+                <div id="sub3-sub3-section3">
+                    <p style="font-size: 15px;font-weight:300;color: grey;">Organization<br><span
+                            style="font-size: 50px;color:#000000;font-weight: bold;">$49.99</span></p>
+
+                    <p style="font-weight: 400;"></p>Capture ideas and find them quickly</p>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Sync unlimited devices</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>10 GB monthly uploads</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>200 MB max. note size
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Customize Home dashboard and access extra widgets</p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Connect primary Google Calendar account
+                        </p>
+                    </div>
+                    <div class="icon-para"><i class="fa-regular fa-circle-check"></i>
+                        <p>Add due dates, reminders, and notifications to your tasks
+                        </p>
+                    </div>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
